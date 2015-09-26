@@ -92,7 +92,11 @@ super + space
 # Screenshots
 #----------------------
 
+Print
+	scrot -e 'mv $f ~/Pictures/Screenshots/'
 
+super + alt + Print
+	scrot --focused -e 'mv $f ~/Pictures/Screenshots/'
 
 # make sxhkd reload its configuration files:
 super + Escape
