@@ -111,8 +111,16 @@ XF86AudioLowerVolume
 XF86AudioRaiseVolume
 	amixer -c 0 set Master 1dB+
 
+#----------------------
+# Multimedia Keys (mpd)
+#----------------------
 
-
+XF86AudioPrev
+	mpc prev
+XF86AudioPlay
+	mpc toggle
+XF86AudioNext
+	mpc next
 
 # make sxhkd reload its configuration files:
 super + Escape
