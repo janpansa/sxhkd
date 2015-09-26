@@ -98,6 +98,22 @@ Print
 super + alt + Print
 	scrot --focused -e 'mv $f ~/Pictures/Screenshots/'
 
+#----------------------
+# Multimedia Keys
+#----------------------
+
+XF86AudioMute
+	amixer set Master toggle
+
+XF86AudioLowerVolume
+	amixer -c 0 set Master 1dB-
+
+XF86AudioRaiseVolume
+	amixer -c 0 set Master 1dB+
+
+
+
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
