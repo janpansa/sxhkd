@@ -101,7 +101,7 @@ super + Return
 # Rofi
 #----------------------
 super + space
-	rofi -show run -bc "#111111" -font "Terminus 12" -lines 5 -width 10 -fg "#afafaf" -bg "#111111" -hlfg "#dd7162" -hlbg "#111111" -o 25
+	rofi -show run -bc "#181818" -font "Terminus 12" -lines 1 -width 150 -location 2 -columns 1 -fg "#afafaf" -bg "#181818" -hlfg "#64979c" -hlbg "#181818" -o 25 -padding 3
 
 #----------------------
 # Screenshots
@@ -140,3 +140,9 @@ XF86AudioNext
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+
+# Lock Screen
+
+super + l
+	gnome-screensaver-command --lock
